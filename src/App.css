@@ -5,8 +5,10 @@
 }
 
 body {
-background-color: #282c34;
+  background-color: #131221;
+  /*background-color: #282c34;*/
 color: #ffffff;
+font-family: 'Roboto-Black';
 }
 
 .container {
@@ -23,8 +25,41 @@ color: #ffffff;
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 100vh;
+  min-height: 50vh;
 }
 
+.header-img {
+  width: 100%;
+}
 
+.header-text {
+  font-size: 200%;
+}
+
+.Header {
+  text-align: center;
+  color: white;
+}
+
+@font-face {
+  font-family: 'Roboto-Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto-Light'), url('../src/Fonts/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto-Black'), url('../src/Fonts/Roboto-Black.ttf') format('truetype');
+}
+
+p {
+  display: block;
+}
+
+.header-subline {
+  font-family: 'Roboto-Light';
+}
 
