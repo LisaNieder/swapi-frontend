@@ -33,7 +33,7 @@ font-family: 'Roboto-Black';
 }
 
 .header-text {
-  font-size: 200%;
+ 
 }
 
 .Header {
@@ -61,5 +61,14 @@ p {
 
 .header-subline {
   font-family: 'Roboto-Light';
+  font-size: 300%;
+  margin: 0px;
 }
+
+.header-headline {
+  font-family: 'Roboto-Black';
+  font-size: 500%;
+  margin-bottom: 0px;
+}
+
 
