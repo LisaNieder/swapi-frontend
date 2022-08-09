@@ -37,11 +37,22 @@
     font-family: 'Roboto-Light';
   }
   
-  /* Style the back side */
   .flip-card-back {
     background-color: #86898f;
     color: white;
     transform: rotateY(180deg);
+  }
+
+  p {
+    display: inline-block;
+  }
+  
+  .center-front {
+    padding: 80px;
+  }
+  
+  .center-back {
+    padding: 65px;
   }
 
   @font-face {
