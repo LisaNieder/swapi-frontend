@@ -3,6 +3,9 @@ import './App.css';
 import People from '../src/Components/People';
 import Card from '../src/Components/Card';
 import header from '../src/img/space-moon.jpg'
+import backgroundPlanetCard from '../src/img/background-moon.jpg';
+import backgroundPeopleCard from '../src/img/background-people.jpg';
+import backgroundMovieCard from '../src/img/background-camera.jpg';
 
 function App() {
   return (
@@ -14,17 +17,15 @@ function App() {
       </div>
       <div className="container center-screen">
         <div className="item">
-          <Card title="People" text="Find your favorite people here!"/>
+          <Card title="People" text="Find your favorite people here!" background={backgroundPeopleCard}/>
         </div>
         <div className="item">
-        <Card title="Planets" text="All the Planets from Star Wars Universe"/>
+        <Card title="Planets" text="All the Planets from Star Wars Universe" background={backgroundPlanetCard}/>
         </div>
         <div className="item">
-        <Card title="Films" text="All your  favorite Movies"/>
+        <Card title="Films" text="All your  favorite Movies" background={backgroundMovieCard}/>
         </div>
-      </div>
-        <img className="header-img" src={header}/>
-      
+      </div>   
     </div>
   );
 }
