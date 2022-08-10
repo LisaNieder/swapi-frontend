@@ -32,19 +32,15 @@
   
 
   .flip-card-front {
-    background-color: #86898f;
+    background-color: #282c34;/*#86898f*/
     color: white;
-    font-family: 'Roboto-Light';
+    font-family: 'Roboto-Black';
   }
   
   .flip-card-back {
-    background-color: #86898f;
+    background-color: #282c34;/*#86898f */
     color: white;
     transform: rotateY(180deg);
-  }
-
-  p {
-    display: inline-block;
   }
   
   .center-front {
@@ -60,4 +56,11 @@
     font-style: normal;
     font-weight: normal;
     src: local('Roboto-Light'), url('../Fonts/Roboto-Light.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Roboto-Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Roboto-Black'), url('../Fonts/Roboto-Black.ttf') format('truetype');
   }
