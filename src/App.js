@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Main from  '../src/Components/Main';
+import Header from '../src/Components/Header';
 import People from '../src/Components/People';
 import Card from '../src/Components/Card';
 import header from '../src/img/space-moon.jpg'
@@ -9,24 +11,11 @@ import backgroundMovieCard from '../src/img/background-camera.jpg';
 
 function App() {
   return (
-    <div className="App">
-      <div className="Header">
-        <p className="header-text header-headline">Star Wars</p>
-        <p className="header-text header-subline">Put in a catchy headline here!</p>
-        
-      </div>
-      <div className="container center-screen">
-        <div className="item">
-          <Card title="People" text="Find your favorite people here!" background={backgroundPeopleCard}/>
-        </div>
-        <div className="item">
-        <Card title="Planets" text="All the Planets from Star Wars Universe" background={backgroundPlanetCard}/>
-        </div>
-        <div className="item">
-        <Card title="Films" text="All your  favorite Movies" background={backgroundMovieCard}/>
-        </div>
-      </div>   
+    <div>
+      <Header />
+      <Main />
     </div>
+    
   );
 }
 
