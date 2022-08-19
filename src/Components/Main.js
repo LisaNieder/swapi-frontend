@@ -9,6 +9,7 @@ import Films from '../Components/Films';
 import Home from '../Components/Home';
 import {Routes, Route, 
     BrowserRouter as Router, Redirect, withRouter, Link} from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import React from 'react';
 
 function Main() {
@@ -17,17 +18,18 @@ function Main() {
             <Router>
             <div className="container center-screen">
                     <div className="item">
-                        <Link to="/people"><Card title="People" text="Find your favorite people here!" background={backgroundPeopleCard}/></Link>
+                        <HashLink to="/people#anchor"><Card title="People" text="Find your favorite people here!" background={backgroundPeopleCard}/></HashLink>
                     </div>
                     <div className="item">
-                        <Link to="/planets"><Card title="Planets" text="All the Planets from Star Wars Universe" background={backgroundPlanetCard}/></Link>
+                        <HashLink to="/planets#anchor"><Card title="Planets" text="All the Planets from Star Wars Universe" background={backgroundPlanetCard}/></HashLink>
                     </div>
                     <div className="item">
-                        <Link to="/films"><Card title="Films" text="All your  favorite Movies" background={backgroundMovieCard}/></Link>
+                        <HashLink to="/films#anchor"><Card title="Films" text="All your  favorite Movies" background={backgroundMovieCard}/></HashLink>
                     </div>
                 </div> 
                        
                 <div className="container center-screen">
+                    <a id="anchor"></a>
                 <Routes>
                     <Route exact path='/' element={<Home/>}/>
                     <Route path='/people' element={<People/>} />
