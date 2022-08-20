@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 export default function People () {
     const [data, setData] = useState([]);
@@ -17,8 +17,8 @@ export default function People () {
     }, [])
     
     return (
-        <div>
+        <React.Fragment>
             render the data here {data["count"]};
-        </div>
+        </React.Fragment>
     )
 }
