@@ -12,13 +12,13 @@ export default function People () {
         .then(res => 
             res.json())
         .then(data => {
-            setData(data);
+            setData(data.results);
             setIsLoading(false);
         })
         .catch(error => console.log(error)); 
     }, [])
     
-    console.log(data["results"]);
+    console.log(data);
     
     return (
         <React.Fragment>
@@ -27,7 +27,11 @@ export default function People () {
                     <Search />
                 </div>
                 {isLoading && <p>Wait I'm Loading data for you</p>}
-                render the data here {data["count"]};
+                render the data here {!isLoading && data.map(item => {
+                    return <p>{item.name}</p>
+                }
+
+                )}
                 
             </div>
             
