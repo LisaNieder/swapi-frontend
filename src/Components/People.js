@@ -1,24 +1,37 @@
 import React, { useEffect, useState } from 'react';
+import Search from '../Components/Search';
+import '../App.css';
 
 export default function People () {
-    const [data, setData] = useState([]);
-
-       const fetchData = () => {
-        fetch('https://swapi.dev/api/people')
-        .then(response => {
-            return response.json()
-        })
-        .then(data => setData(data))
-        console.log(data)
-    }
+    const [data, setData] = React.useState({});
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        fetchData()
+      
+        fetch('https://swapi.dev/api/people')
+        .then(res => 
+            res.json())
+        .then(data => {
+            setData(data);
+            setIsLoading(false);
+        })
+        .catch(error => console.log(error)); 
     }, [])
+    
+    console.log(data["results"]);
     
     return (
         <React.Fragment>
-            render the data here {data["count"]};
+            <div className="container-column">
+                <div className="item">
+                    <Search />
+                </div>
+                {isLoading && <p>Wait I'm Loading data for you</p>}
+                render the data here {data["count"]};
+                
+            </div>
+            
+            
         </React.Fragment>
     )
 }

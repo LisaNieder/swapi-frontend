@@ -20,6 +20,11 @@ font-family: 'Roboto-Black';
   margin: 50px;
 }
 
+.container-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .center-screen {
   display: flex;
   justify-content: center;
