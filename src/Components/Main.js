@@ -7,6 +7,7 @@ import People from '../Components/People';
 import Planets from '../Components/Planets';
 import Films from '../Components/Films';
 import Home from '../Components/Home';
+import Person from '../Components/Person';
 import {Routes, Route, 
     BrowserRouter as Router, Redirect, withRouter, Link} from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
@@ -35,6 +36,7 @@ function Main() {
                     <Route path='/people' element={<People/>} />
                     <Route path='/planets' element={<Planets/>} />
                     <Route path='/films' element={<Films/>} />
+                    <Route path='/person' element={<Person /> } />
                     
                 </Routes>
                 </div>
