@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import '../App.css';
-import Fetch from '../Components/Fetch';
 
 export default function People () {
     const [data, setData] = React.useState({});

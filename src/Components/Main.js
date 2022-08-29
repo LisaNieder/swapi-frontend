@@ -7,7 +7,6 @@ import People from '../Components/People';
 import Planets from '../Components/Planets';
 import Films from '../Components/Films';
 import Home from '../Components/Home';
-import Person from '../Components/Person';
 import {Routes, Route, 
     BrowserRouter as Router, Redirect, withRouter, Link} from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
