@@ -35,7 +35,6 @@ function Main() {
                     <Route path='/people' element={<People/>} />
                     <Route path='/planets' element={<Planets/>} />
                     <Route path='/films' element={<Films/>} />
-                    <Route path='/person' element={<Person /> } />
                     
                 </Routes>
                 </div>
