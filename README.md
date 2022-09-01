@@ -1,7 +1,7 @@
 # Swapi Frontend
 
 ## Description
-This is a small frontend for the SWAPI Star Wars API [SWAPI](https://swapi.dev/). It's purpose is simple: show the progress of my frontend skills.
+This is a small frontend for the Star Wars API [SWAPI](https://swapi.dev/). It's purpose is simple: show the progress of my frontend skills.
 
 ## Technologies
 React - JavaScript - CSS - HTML
