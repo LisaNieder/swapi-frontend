@@ -1,5 +1,18 @@
-# Getting Started with Create React App
+# Swapi Frontend
 
+##Description
+This is a small frontend for the SWAPI Star Wars API [SWAPI](https://swapi.dev/). It's purpose is simple: show the progress of my frontend skills.
+
+##Technologies
+React - JavaScript - CSS - HTML
+
+##Demo
+Coming soon
+
+##Usage
+Via click on one of the three categorys (people, planets or films) you get information from the api displayed as a list in the frontend.
+
+---
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
