@@ -16,9 +16,7 @@ export default function People () {
         })
         .catch(error => console.log(error)); 
     }, [])
-    
-    console.log(data);
-    
+       
     return (
         <React.Fragment>
             <div className="container-column">
