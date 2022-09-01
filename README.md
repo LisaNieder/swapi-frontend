@@ -1,15 +1,15 @@
 # Swapi Frontend
 
-##Description
+## Description
 This is a small frontend for the SWAPI Star Wars API [SWAPI](https://swapi.dev/). It's purpose is simple: show the progress of my frontend skills.
 
-##Technologies
+## Technologies
 React - JavaScript - CSS - HTML
 
-##Demo
+## Demo
 Coming soon
 
-##Usage
+## Usage
 Via click on one of the three categorys (people, planets or films) you get information from the api displayed as a list in the frontend.
 
 ---
