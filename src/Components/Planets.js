@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../App.css';
+import ContentCard from '../Components/ContentCard.js';
 
 function Planets() {
     const [data, setData] = React.useState({});
@@ -25,12 +26,9 @@ function Planets() {
             {isLoading && <p>Wait I'm Loading data for you</p>}
             <ol>
             {!isLoading && data.map(item => {
-                return <li key={item.name}>
-                    <p>Name: {item.name}</p>
-                    <p>Terrain: {item.terrain}</p>
-                    <p>Population: {item.population}</p>
-                    <p>Climate: {item.climate}</p>
-                </li>
+                return <div>
+                <ContentCard type="planets" name={item.name} terrain={item.terrain} population={item.population} climate={item.climate} />
+                    </div>
             }
             
 

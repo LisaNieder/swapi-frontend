@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../App.css';
+import ContentCard from '../Components/ContentCard.js';
 
 export default function People () {
     const [data, setData] = React.useState({});
@@ -25,13 +26,10 @@ export default function People () {
                 {isLoading && <p>Wait I'm Loading data for you</p>}
                 <ol>
                 {!isLoading && data.map(item => {
-                    return <li key={item.name}>
-                        <p>Name: {item.name}</p>
-                        <p>Hair Color: {item.hair_color}</p>
-                        <p>Eye Color: {item.eye_color}</p>
-                        <p>Gender: {item.gender}</p>
-                        <p>Birth Year: {item.birth_year}</p>
-                    </li>
+                    return <div>
+                    <ContentCard type="people" name={item.name} hairColor={item.hair_color} eyeColor={item.eye_color} gender={item.gender} birthYear={item.birth_year} />
+                    </div>
+                    
                 }
                 
 

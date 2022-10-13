@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../App.css';
+import ContentCard from '../Components/ContentCard.js';
 
 function Films() {
     const [data, setData] = React.useState({});
@@ -26,11 +27,9 @@ function Films() {
                 {isLoading && <p>Wait I'm Loading data for you</p>}
                 <ol>
                 {!isLoading && data.map(item => {
-                    return <li key={item.title}>
-                        <p>Title: {item.title}</p>
-                        <p>Episode: {item.episode_id}</p>
-                        <p>Release Date: {item.release_date}</p>
-                    </li>
+                    return <div>
+                    <ContentCard type="films" title={item.title} episode={item.episode_id} releaseDate={item.release_date} />
+                        </div>
                 }
                 
 
